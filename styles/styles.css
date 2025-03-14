@@ -18,7 +18,6 @@ aside {
 aside img {
   width: 200px; 
   height: auto; 
-  ...
 }
 
 /* Styles images inside main to have a specific width while keeping aspect ratio */
