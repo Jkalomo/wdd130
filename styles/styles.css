@@ -1,0 +1,63 @@
+/* Limits the width of the main content area */
+main {
+  max-width: 840px;
+}
+
+/* Styles for the aside element */
+aside {
+  width: 20rem; 
+  margin: 1rem; 
+  border: 1px solid rgb(0 0 0 / 0.2); /* Creates a subtle transparent border */
+  padding: 1rem; 
+  background-color: #eee; 
+  color: #333; 
+  text-align: center; 
+}
+
+/* Ensures images inside aside maintain a proper aspect ratio */
+aside img {
+  width: 200px; 
+  height: auto; 
+  ...
+}
+
+/* Styles images inside main to have a specific width while keeping aspect ratio */
+main img {
+  width: 150px; 
+  height: auto; 
+}
+
+/* Removes padding from paragraph elements */
+p {
+  padding: 0;
+}
+
+/* Styles for the footer */
+footer {
+  margin-top: 15px; 
+  border-top: 1px solid #000; 
+  text-align: center; 
+}
+
+/* Styles for the navigation bar */
+nav {
+  background-color: darkblue; 
+  padding: 10px; 
+}
+
+/* Styles for links inside the navigation bar */
+nav a {
+  color: white; 
+  display: block; 
+  padding: 20px; 
+}
+
+/* Styles for h1 headings */
+h1 {
+  color: darkblue; 
+}
+
+
+
+
+
