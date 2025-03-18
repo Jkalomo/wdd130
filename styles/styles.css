@@ -1,9 +1,17 @@
+
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Limits the width of the main content area */
 main {
   max-width: 840px;
 }
 
-/* Styles for the aside element */
+/* Styles for the aside element checked*/
 aside {
   width: 20rem; 
   margin: 1rem; 
@@ -16,14 +24,25 @@ aside {
 
 /* Ensures images inside aside maintain a proper aspect ratio */
 aside img {
-  width: 200px; 
+  width: 200px;
   height: auto; 
-}
+  }
+
+  aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+  }
 
 /* Styles images inside main to have a specific width while keeping aspect ratio */
 main img {
   width: 150px; 
   height: auto; 
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30 px gray;
+  float: right;
+  margin: 0 0 1rem 1rem;
 }
 
 /* Removes padding from paragraph elements */
@@ -40,7 +59,7 @@ footer {
 
 /* Styles for the navigation bar */
 nav {
-  background-color: darkblue; 
+  background-color: steelblue;
   padding: 10px; 
 }
 
@@ -48,12 +67,21 @@ nav {
 nav a {
   color: white; 
   display: block; 
-  padding: 20px; 
+  padding: 10px;
 }
 
 /* Styles for h1 headings */
 h1 {
   color: darkblue; 
+}
+
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid rgb(0, 0, 0 / 10%);
+  background-color: #ddd;
+  color: #000;
 }
 
 

@@ -1,0 +1,48 @@
+/* Styles for main container */
+main {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Hero image container */
+.herodiv {
+    width: 850px;
+    margin: 20px auto;
+    position: relative; /* Needed to contain the absolutely positioned .stats */
+}
+
+/* Ensure image fits properly */
+.herodiv img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Overlay box */
+.stats {
+    position: absolute;
+    bottom: 25px;
+    left: 15px; /* Moves the box to the lower-left corner */
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
