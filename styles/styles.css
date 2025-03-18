@@ -93,16 +93,16 @@ h1 {
     display: block;
 }
 
-/* Make h2 appear inside the image */
+/* Position h2 inside the image */
 .image-container h2 {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    text-align: center;
-    width: 80%;
-    }
-
+  grid-area: 1 / 1; /* Overlay text on top of the image */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 80%;
+}
 
 
