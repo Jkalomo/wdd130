@@ -28,7 +28,12 @@ aside img {
   height: auto; 
   }
 
-  
+  aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+  }
+
 /* Styles images inside main to have a specific width while keeping aspect ratio */
 main img {
   width: 150px; 
@@ -79,30 +84,7 @@ h1 {
   color: #000;
 }
 
-* Create a grid container for the image and text */
-.image-container {
-    display: grid;
-    width: 100%; /* Make it responsive */
-    place-items: center; /* Centers both h2 and image */
-}
 
-/* Ensure image fills the container */
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
-/* Position h2 inside the image */
-.image-container h2 {
-  grid-area: 1 / 1; /* Overlay text on top of the image */
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  text-align: center;
-  width: 80%;
-}
 
 
