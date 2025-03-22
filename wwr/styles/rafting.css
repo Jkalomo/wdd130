@@ -106,8 +106,8 @@ footer {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Align vertically */
-    gap: 10
-    px; /* Space between icons */
+    gap: 10px;
+     /* Space between icons */
 }
 
 .sociallinks a {
@@ -117,7 +117,7 @@ footer {
 }
 
 .sociallinks img {
-    max-width: 150px;  /* Adjust size as needed */
+    max-width: 50px;  /* Adjust size as needed */
     height: auto; /* Maintains aspect ratio */
     margin: 0 10px; /* Adds spacing between icons */
 }
