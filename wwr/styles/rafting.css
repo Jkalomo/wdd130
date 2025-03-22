@@ -37,8 +37,10 @@ nav a {
 
 /* Hero Section */
 .hero {
-    position: relative;
+    position: relative; /* Ensures child elements are positioned relative to this */
     text-align: center;
+    width: 100%;
+    overflow: hidden; /* Prevents unwanted spacing */
 }
 
 .hero img {
@@ -47,32 +49,36 @@ nav a {
     display: block;
 }
 
+/* Hero Text (Title) */
 .hero h1 {
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 2.5rem;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
     border-radius: 10px;
 }
 
-article {
+/* Mission Article */
+.hero article {
     position: absolute;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     padding: 15px;
     border-radius: 10px;
     width: 60%;
+    text-align: left;
 }
 
-article img {
+.hero article img {
     float: right;
-    width: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin-left: 15px;
 }
@@ -102,11 +108,12 @@ footer {
     margin-top: 20px;
 }
 
+/* Social Media Links */
 .sociallinks {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Align vertically */
-    gap: 10px;  /* Space between icons */
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between icons */
 }
 
 .sociallinks a {
@@ -116,7 +123,28 @@ footer {
 }
 
 .sociallinks img {
-    max-width: 50px;  /* Adjust size as needed */
-    height: auto; /* Maintains aspect ratio */
-    margin: 0 10px; /* Adds spacing between icons */
+    width: 35px; /* Reduced size for better layout */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sociallinks img:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+        top: 25%;
+    }
+
+    .hero article {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    .sociallinks img {
+        width: 30px;
+    }
 }
