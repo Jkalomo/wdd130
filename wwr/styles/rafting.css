@@ -16,32 +16,47 @@ body {
 
 /* Header Styles */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo + Nav */
     align-items: center;
     background-color: var(--primary-color);
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
+/* Logo Styling */
 header img {
-    width: 150px;
+    width: 120px;
     height: auto;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    margin: 0 15px;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
-    position: relative; /* Ensures child elements are positioned relative to this */
+    position: relative;
     text-align: center;
     width: 100%;
-    height: 500px; ;
-    overflow: hidden; /* Prevents unwanted spacing */
+    height: 500px;
+    overflow: hidden;
 }
 
 .hero img {
@@ -50,7 +65,6 @@ nav a {
     display: block;
 }
 
-/* Hero Text (Title) */
 .hero h1 {
     position: absolute;
     top: 30%;
@@ -63,7 +77,7 @@ nav a {
     border-radius: 10px;
 }
 
-/* Mission Article */
+/* Mission Section */
 .hero article {
     position: absolute;
     bottom: 10%;
@@ -84,57 +98,98 @@ nav a {
     margin-left: 15px;
 }
 
-/* Sections */
-section {
+/* History Section */
+.history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
-section h2 {
-    color: var(--primary-color);
+.history div {
+    flex: 1;
+    max-width: 300px;
 }
 
-section img {
-    width: 280px;
-    margin: 10px;
+.history img {
+    width: 200px;
+    height: auto;
     border-radius: 10px;
+}
+
+/* Adventure Section */
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.adventure figure {
+    text-align: center;
+}
+
+.adventure img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.adventure figcaption {
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 /* Footer */
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--primary-color);
     color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 15px 20px;
 }
 
 /* Social Media Links */
 .sociallinks {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* Space between icons */
+    gap: 15px;
 }
 
 .sociallinks a {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .sociallinks img {
-    width: 35px; /* Reduced size for better layout */
+    width: 35px;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
 
 .sociallinks img:hover {
-    transform: scale(1.2); /* Slight zoom effect on hover */
+    transform: scale(1.2);
 }
 
-/* Responsive Design */
+//* Responsive Navigation */
 @media screen and (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr; /* Stack logo and nav */
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+
     .hero h1 {
         font-size: 2rem;
         top: 25%;
@@ -145,7 +200,17 @@ footer {
         font-size: 0.9rem;
     }
 
-    .sociallinks img {
-        width: 30px;
+    .adventure {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sociallinks {
+        justify-content: center;
     }
 }
+
