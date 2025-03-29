@@ -122,22 +122,33 @@ nav a:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds contrast */
 }
 
-/* Adventure Section */
+* Adventure Section */
 .adventure {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    justify-items: center;
+    text-align: center;
     padding: 20px;
 }
 
+.adventure h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center; /* Centers the heading */
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
 .adventure figure {
+    flex: 1 1 calc(20% - 15px); /* Five images in one row */
+    max-width: 200px;
     text-align: center;
 }
 
 .adventure img {
     width: 100%;
-    max-width: 300px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -145,6 +156,22 @@ nav a:hover {
 .adventure figcaption {
     font-weight: bold;
     margin-top: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .adventure-gallery {
+        flex-wrap: wrap;
+    }
+    .adventure figure {
+        flex: 1 1 calc(50% - 15px); /* Two per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .adventure figure {
+        flex: 1 1 100%; /* Stacks images vertically */
+    }
 }
 
 /* Footer */
