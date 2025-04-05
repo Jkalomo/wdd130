@@ -1,22 +1,16 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact page for Whitewater Rafting.">
-    <meta name="author" content="The Rapids">
+    <meta name="author" content="The Rapids"> <!-- Added author tag -->
     <title>Contact Us - The Rapids</title>
-
-    <!-- Preconnect links for Google Fonts (to improve performance) -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-
-    <!-- Google Fonts API link for Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Link to your CSS -->
     <link rel="stylesheet" href="styles/rafting.css">
+    <!-- Google Fonts Preconnect and Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,7 +26,7 @@
     </header>
 
     <main>
-        <h1>Contact The Rapids</h1>
+        <h1>Contact The Rapids</h1> <!-- Added H1 to reflect the page title -->
         <div class="contact-container">
             <!-- Left Section: Company Information and Map -->
             <section class="contact-info">
@@ -44,7 +38,7 @@
                 <h3>Find Us on the Map</h3>
                 <div class="map-container">
                     <!-- Google Map Embed (no inline styles) -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15095.516795885487!2d29.806257883116423!3d-18.936740429231264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x193469ed50c32d55%3A0xf2683a1f44164bde!2sRoasting%20Plant!5e0!3m2!1sen!2sus!4v1743460392947!5m2!1sen!2sus" class="google-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15095.516795885487!2d29.806257883116423!3d-18.936740429231264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x193469ed50c32d55%3A0xf2683a1f44164bde!2sRoasting%20Plant!5e0!3m2!1sen!2sus!4v1743460392947!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
 
@@ -83,9 +77,9 @@
 
                     <label for="inquiry">Purpose of Your Message</label>
                     <div class="radio-group">
-                        <label><input type="radio" id="inquiry-general" name="inquiry" value="general"> General Inquiry</label>
-                        <label><input type="radio" id="inquiry-reservation" name="inquiry" value="reservation"> Reservation Question</label>
-                        <label><input type="radio" id="inquiry-suggestion" name="inquiry" value="suggestion"> Website Suggestion</label>
+                        <label for="inquiry-general"><input type="radio" id="inquiry-general" name="inquiry" value="general"> General Inquiry</label>
+                        <label for="inquiry-reservation"><input type="radio" id="inquiry-reservation" name="inquiry" value="reservation"> Reservation Question</label>
+                        <label for="inquiry-suggestion"><input type="radio" id="inquiry-suggestion" name="inquiry" value="suggestion"> Website Suggestion</label>
                     </div>
 
                     <label for="message">Your Message</label>
