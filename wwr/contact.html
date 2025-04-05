@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Whitewater Rafting.">
+    <title>Contact Us - The Rapids</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/z-therapidssplash.jpg" alt="Rafting Company Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <!-- Left Section: Company Information and Map -->
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> 24 Sandrine St,Kwekwe City, 20561</p>
+                <p><strong>Phone:</strong> (+263) 456-7890</p>
+                <p><strong>Email:</strong> contact@therapids.com</p>
+
+                <h3>Find Us on the Map</h3>
+                <div class="map-container">
+                    <!-- Google Map Embed (without inline CSS) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15095.516795885487!2d29.806257883116423!3d-18.936740429231264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x193469ed50c32d55%3A0xf2683a1f44164bde!2sRoasting%20Plant!5e0!3m2!1sen!2sus!4v1743460392947!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <!-- Right Section: Employee Profiles -->
+            <section class="employee-profiles">
+                <h2>Meet Our Team</h2>
+                <div class="profiles">
+                    <div class="employee">
+                        <img src="images/jabulani.jpg" alt="Employee1">
+                        <p>Jabulani - Lead Guide</p>
+                    </div>
+                    <div class="employee">
+                        <img src="images/santana.jpg" alt="Employee2">
+                        <p>Santana - River Expert</p>
+                    </div>
+                    <div class="employee">
+                        <img src="images/xavier.jpg" alt="Employee3">
+                        <p>Xavier - Safety Officer</p>
+                    </div>
+                    <div class="employee">
+                        <img src="images/jayden.jpg" alt="Employee4">
+                        <p>Jayden - Customer Support</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Form Section -->
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="/submit" method="post">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="inquiry">Purpose of Your Message</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="inquiry" value="general"> General Inquiry</label>
+                        <label><input type="radio" name="inquiry" value="reservation"> Reservation Question</label>
+                        <label><input type="radio" name="inquiry" value="suggestion"> Website Suggestion</label>
+                    </div>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <label>
+                        <input type="checkbox" name="newsletter" value="subscribe">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+
+                    <button type="submit">Submit Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Rapids | Jabulani Kalomo</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/834722_facebook_icon.svg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/6929237_instagram_icon.svg" alt="Instagram"></a>
+        </nav>
+        <p><a href="https://app.moqups.com/CZPTZsW5SX3rRYc6nbrrFDsW0BMAHIOx/view/page/ad12de680" target="_blank">View Wireframe</a></p>
+    </footer>
+
+</body>
+
+</html>
