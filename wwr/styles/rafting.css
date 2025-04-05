@@ -72,7 +72,7 @@ nav a:hover {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 2.5rem;
-    background: rgba(0, 0, 0, 0.75); /* Increased opacity for readability */
+    background: rgba(0, 0, 0, 0.75); 
     padding: 10px 20px;
     border-radius: 10px;
 }
@@ -83,7 +83,7 @@ nav a:hover {
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.95); /* Slightly more opaque */
+    background: rgba(255, 255, 255, 0.95); 
     padding: 15px;
     border-radius: 10px;
     width: 60%;
@@ -106,7 +106,7 @@ nav a:hover {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    background-color: #e0e0e0; /* Darkened for contrast */
+    background-color: #e0e0e0; 
     text-align: center;
 }
 
@@ -131,18 +131,18 @@ nav a:hover {
 .adventure h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    text-align: center; /* Centers the heading */
+    text-align: center; 
 }
 
 .adventure-gallery {
     display: flex;
     justify-content: center;
     gap: 15px;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    flex-wrap: wrap; 
 }
 
 .adventure figure {
-    flex: 1 1 calc(20% - 15px); /* Five images in one row */
+    flex: 1 1 calc(20% - 15px); 
     max-width: 200px;
     text-align: center;
 }
@@ -170,7 +170,7 @@ nav a:hover {
 
 @media screen and (max-width: 480px) {
     .adventure figure {
-        flex: 1 1 100%; /* Stacks images vertically */
+        flex: 1 1 100%; 
     }
 }
 
