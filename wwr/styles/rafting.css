@@ -427,3 +427,107 @@ footer a:hover {
 footer a:hover {
     color: #FFD700; 
 }
+
+/* Added */
+
+/* Trips Page Styles */
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.call-to-action a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action a:hover {
+    background-color: #005A8D;
+}
+
+/* Trip Descriptions Section */
+.trip-descriptions {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.trip {
+    flex: 1;
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.trip-info {
+    padding-top: 10px;
+}
+
+/* Trip Table */
+.trip-table {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Footer Link to Wireframe */
+footer a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* For the trip page only */
+.trip-page .trips img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* For small screens on the trip page */
+@media (max-width: 600px) {
+    .trip-page .trips img {
+        max-width: 80%;
+    }
+}
