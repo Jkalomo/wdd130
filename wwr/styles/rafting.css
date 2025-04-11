@@ -531,3 +531,80 @@ footer a:hover {
         max-width: 80%;
     }
 }
+
+/* CSS for the grid layout */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures images fit the container well */
+}
+
+/* Optional: Styling for smaller screens */
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr; /* Stacks items in a single column for smaller screens */
+    }
+}
+
+/* Style for the newsletter form */
+#newsletter {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+    max-width: 400px;
+    margin: 0 auto; /* Center the form */
+}
+
+/* Style for the form labels */
+#newsletter label {
+    display: block;
+    font-size: 1rem; /* Smaller size for labels */
+    font-weight: 600;
+    margin-bottom: 8px; /* Space between label and input */
+    color: #333;
+}
+
+/* Style for the input fields */
+#newsletter input[type="text"],
+#newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Space between input fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Style for the submit button */
+#newsletter button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#newsletter button:hover {
+    background-color: #0056b3; /* Darken on hover */
+}
+
