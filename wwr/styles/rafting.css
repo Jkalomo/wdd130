@@ -425,7 +425,7 @@ footer a:hover {
 
 /* Adjust footer link colors on hover */
 footer a:hover {
-    color: #FFD700; 
+    color: #CC9900; 
 }
 
 /* Added */
@@ -510,7 +510,7 @@ footer a:hover {
 /* Footer Link to Wireframe */
 footer a {
     text-decoration: none;
-    color: #FFD700;
+    color: #CC9900;
     font-weight: bold;
 }
 
@@ -593,7 +593,7 @@ footer a:hover {
 
 /* Style for the submit button */
 #newsletter button {
-    background-color: #007BFF;
+    background-color: #0060cc;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -606,5 +606,28 @@ footer a:hover {
 
 #newsletter button:hover {
     background-color: #0056b3; /* Darken on hover */
+}
+
+table {
+    border-collapse: collapse;
+    margin: 2rem auto; /* Center the table horizontally */
+    width: 90%;
+    max-width: 800px; /* Optional: keeps the table from being too wide */
+    font-family: 'Montserrat', sans-serif;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+table thead {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
 }
 
