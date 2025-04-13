@@ -1,4 +1,14 @@
 
+:root {
+  --heading-background-color: #b30000;
+  --heading-text-color: #333;
+  --heading-font:'Montserrat', Helvetica, sans-serif;
+  --padding: 1rem;
+  --border: 1px solid rgb(0 0 0/0.1)
+}
+
+
+
 /* Universal Selector */
 * {
   margin: 0;
@@ -13,25 +23,45 @@ main {
 
 /* Styles for the aside element checked*/
 aside {
-  width: 20rem; 
-  margin: 1rem; 
-  border: 1px solid rgb(0 0 0 / 0.2); /* Creates a subtle transparent border */
-  padding: 1rem; 
-  background-color: #eee; 
-  color: #333; 
-  text-align: center; 
+  width: 100%;
+  max-width: 300px; /* or adjust based on layout */
+  margin: 1rem auto;
+  border: var(--border);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 /* Ensures images inside aside maintain a proper aspect ratio */
 aside img {
-  width: 200px;
-  height: auto; 
-  }
+  width: 100%; /* fills the box width */
+  height: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
 
   aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 150px;
+    font-family: var(--heading-font);
+    font-size: 1.4rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    background-color: var(--heading-background-color);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+
+  img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
   }
 
 /* Styles images inside main to have a specific width while keeping aspect ratio */
@@ -47,7 +77,7 @@ main img {
 
 /* Removes padding from paragraph elements */
 p {
-  padding: 0;
+  padding: 10px;
 }
 
 /* Styles for the footer */
@@ -59,21 +89,22 @@ footer {
 
 /* Styles for the navigation bar */
 nav {
-  background-color: steelblue;
-  padding: 1rem;
-  display:flex;
-  justify-content:space-evenly;
-  align-items: center; 
+  background-color: darkblue;
+  padding: 10px;
+  text-align: center; /* centers the nav items */
 }
 
-/* Styles for links inside the navigation bar */
 nav a {
-  color: #fff; 
-  display: block; 
-  padding: 0.5px;
+  color: white;
+  display: inline-block; /* makes links sit next to each other */
+  padding: 10px 20px;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* optional hover effect */
+  border-radius: 5px;
 }
 
 /* Styles for h1 headings */
@@ -98,6 +129,25 @@ body {
 header {
   max-width: 840px;
   margin: 0 auto;
+}
+
+.profile-box {
+  display: flex;
+  align-items: center; /* vertically align text with image */
+  gap: 1rem; /* space between image and text */
+}
+
+.profile-box img.profile-pic {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-box p {
+  flex: 1; /* allows paragraph to take remaining space */
+  padding: 0;
+  margin: 0;
 }
 
 
